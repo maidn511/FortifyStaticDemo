@@ -51,7 +51,7 @@ jobs:
           SSC_UPLOAD_TOKEN: ${{ secrets.SSC_UPLOAD_TOKEN }}
           APPLICATION: "GitHub .NET Solutions"
           VERSION: "V1"
-          BUILD_FILE: "../MyEncryptionApp.sln"
+          BUILD_FILE: "C:/FortifyStaticDemo/MyEncryptionApp/MyEncryptionApp.sln"
           #MSBUILD_PATH: "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe"
 
       ### Archive ScanCentral Client logs on failure ###
