@@ -1,0 +1,7 @@
+C:\Users\visual.studio\source\repos\MyEncryptionApp\MyEncryptionApp\bin\Debug\MyEncryptionApp.exe.config
+C:\Users\visual.studio\source\repos\MyEncryptionApp\MyEncryptionApp\bin\Debug\MyEncryptionApp.exe
+C:\Users\visual.studio\source\repos\MyEncryptionApp\MyEncryptionApp\bin\Debug\MyEncryptionApp.pdb
+C:\Users\visual.studio\source\repos\MyEncryptionApp\MyEncryptionApp\obj\Debug\MyEncryptionApp.csproj.AssemblyReference.cache
+C:\Users\visual.studio\source\repos\MyEncryptionApp\MyEncryptionApp\obj\Debug\MyEncryptionApp.csproj.CoreCompileInputs.cache
+C:\Users\visual.studio\source\repos\MyEncryptionApp\MyEncryptionApp\obj\Debug\MyEncryptionApp.exe
+C:\Users\visual.studio\source\repos\MyEncryptionApp\MyEncryptionApp\obj\Debug\MyEncryptionApp.pdb
