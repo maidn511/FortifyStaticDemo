@@ -1,0 +1,12 @@
+name: Test SSL Connection
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-ssl-connection:
+    runs-on: self-hosted
+    
+    steps:
+      - name: Check SSL Connection
+        run: curl --head https://btpgcsvm83727/scancentral-ctrl/
