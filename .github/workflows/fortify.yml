@@ -36,7 +36,7 @@ jobs:
       - name: Download Fortify ScanCentral Client
         uses: fortify/gha-setup-scancentral-client@master  
         with:
-          version: 22.2.0                                      # On-prem customers should specify a client version that matches their ScanCentral environment
+          version: 23.1.0                                      # On-prem customers should specify a client version that matches their ScanCentral environment
                                                                # FoD customers usually should not specify a version but rather rely on the default version
           client-auth-token: ${{ secrets.CLIENT_AUTH_TOKEN }}  # Optional, but required if ScanCentral Controller requires client authentication
 
@@ -49,7 +49,7 @@ jobs:
         env:                                            
           SC_CONTROLLER_URL: ${{ secrets.SC_CONTROLLER_URL }}
           SSC_UPLOAD_TOKEN: ${{ secrets.SSC_UPLOAD_TOKEN }}
-          APPLICATION: "GitHub .NET Solutions"
+          APPLICATION: ".NET Samples"
           VERSION: "V1"
           BUILD_FILE: "MyEncryptionApp/MyEncryptionApp.sln"
           #MSBUILD_PATH: "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe"
@@ -60,4 +60,4 @@ jobs:
         if: failure()
         with:
            name: scancentral-logs
-           path: "%LOCALAPPDATA%/Fortify/scancentral-22.2.1/log"
+           path: "%LOCALAPPDATA%/Fortify/scancentral-23.1.0/log"
