@@ -7,7 +7,8 @@ trigger:
 - main
 
 pool:
-  vmImage: 'windows-2019'
+  name: 'ScanCentral SAST'
+  vmImage: 'Self-hosted'
 
 variables:
   solution: '**/*.sln'
