@@ -9,4 +9,6 @@ jobs:
     
     steps:
       - name: Check SSL Connection
-        run: curl --head https://btpgcsvm83727/scancentral-ctrl/
+        run:
+          $response = Invoke-WebRequest -Uri "https://btpgcsvm83727/scancentral-ctrl/"
+          $response.Headers
