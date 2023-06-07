@@ -10,3 +10,4 @@ jobs:
     steps:
       - run: echo "Hello World"
       - run: Invoke-WebRequest -Uri "https://btpgcsvm83727/scancentral-ctrl/" -UseBasicParsing
+      - run: Invoke-WebRequest -Uri "https://github.com/actions/runner" -UseBasicParsing
