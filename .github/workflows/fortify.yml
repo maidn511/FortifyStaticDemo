@@ -51,7 +51,7 @@ jobs:
         env:                                            
           SC_CONTROLLER_URL: ${{ secrets.SC_CONTROLLER_URL }}
           SSC_UPLOAD_TOKEN: ${{ secrets.SSC_UPLOAD_TOKEN }}
-          APPLICATION: ".NET Samples"
+          APPLICATION: "Azure DevOps"
           VERSION: "V1"
           BUILD_FILE: "MyEncryptionApp/MyEncryptionApp.sln"
           #MSBUILD_PATH: "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe"
