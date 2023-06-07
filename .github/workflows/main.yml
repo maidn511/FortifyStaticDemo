@@ -11,3 +11,5 @@ jobs:
       - run: echo "Hello World"
       - run: Invoke-WebRequest -Uri "https://btpgcsvm83727/scancentral-ctrl/" -UseBasicParsing
       - run: Invoke-WebRequest -Uri "https://github.com/actions/runner" -UseBasicParsing
+      - run: $env:GIT_CURL_VERBOSE = '1'
+      - run: git ls-remote https://github.com/actions/runner HEAD
