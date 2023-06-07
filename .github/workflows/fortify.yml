@@ -25,7 +25,7 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }} 
       # Add this step to set the git config http.sslCAInfo
       - name: Set Git SSL CA Info
-        run: $env:GIT_SSL_CAINFO =v'C:\actions-runner\trusted.pem'
+        run: $env:GIT_SSL_CAINFO ='C:\actions-runner\trusted.pem'
       # Java is required to run ScanCentral Client, and may be required for your build
       # Java version to use depends on the Java version required to run your build (if any),
       # and the Java version supported by the ScanCentral Client version that you are running
