@@ -17,10 +17,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       
-      - name: Install Git Bash
-        run: choco install git
-        shell: cmd
-
       - name: Test Bash Script
         shell: bash
         run: |
