@@ -62,4 +62,4 @@ jobs:
         if: failure()
         with:
            name: scancentral-logs
-           path: "%LOCALAPPDATA%/Fortify/scancentral-23.1.0/log"
+           path: "%LOCALAPPDATA%/Fortify/scancentral-23.2.0/log"
