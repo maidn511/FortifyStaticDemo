@@ -1,20 +1,31 @@
 name: Fortify ScanCentral SAST Scan
+
 on:
   workflow_dispatch:
   push:
-    # Master or main branch that you want to trigger this workflow for
-    branches: [master]
+    branches:
+      - master
   pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [master]
+    branches:
+      - master
 
-jobs:                                                  
+jobs:
   Fortify-SAST:
-    # Use the appropriate runner for building your source code
     runs-on: self-hosted
 
     steps:
-    - name: Test Bash Script
-      shell: bash
-      run: |
-        /C/msys64/usr/bin/bash -c "echo 'This is a test sentence written by a Bash script on a Windows runner.'
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: List Binaries in PATH
+        run: |
+          echo "Binaries found in the PATH:"
+          for dir in $(echo $PATH | tr ":" "\n")
+          do
+            echo "Directory: $dir"
+            if [ -d "$dir" ]; then
+              ls "$dir"
+            else
+              echo "Directory not found."
+            fi
+          done
