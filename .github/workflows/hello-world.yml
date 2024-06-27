@@ -9,7 +9,11 @@ jobs:
   example-job:
     runs-on: self-hosted
     steps:
+      - name: Set Bash Path
+        run: |
+          echo "##[set-env name=BASH_PATH]/c/msys64/usr/bin/bash.exe"
+      
       - name: Run Bash Command
         shell: bash
         run: |
-          '/c/msys64/usr/bin/bash.exe' -c 'echo "Hello, World!"'
+          ${{ env.BASH_PATH }} -c 'echo "Hello, World!"'
