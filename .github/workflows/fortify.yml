@@ -17,15 +17,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: List Binaries in PATH
+      - name: List Directories in PATH
         run: |
-          Write-Output "Binaries found in the PATH:"
+          Write-Output "Directories in the PATH:"
           $pathDirs = $env:PATH -split ';'
           foreach ($dir in $pathDirs) {
-            Write-Output "Directory: $dir"
-            if (Test-Path $dir -PathType Container) {
-              Get-ChildItem $dir
-            } else {
-              Write-Output "Directory not found."
-            }
+            Write-Output $dir
           }
