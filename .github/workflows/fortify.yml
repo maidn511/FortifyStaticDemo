@@ -17,7 +17,7 @@ jobs:
       - name: Check out source code
         uses: actions/checkout@v4  
       - name: Run ScanCentral SAST Scan
-        uses: fortify/github-action@v1.2.2
+        uses: fortify/github-action/sc-sast-scan@v1
         env:
           SSC_URL: ${{secrets.SSC_URL}}
           SSC_TOKEN: ${{secrets.SSC_TOKEN}}
@@ -28,4 +28,4 @@ jobs:
           SC_SAST_SENSOR_VERSION: 23.2
           # DO_WAIT: true
           # DO_EXPORT: true
-          # TOOL_DEFINITIONS: https://ftfy.mycompany.com/tool-definitions/v1/tool-definitions.yaml.zip
+          TOOL_DEFINITIONS: https://ftfy.mycompany.com/tool-definitions/v1/tool-definitions.yaml.zip
