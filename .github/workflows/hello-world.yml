@@ -6,14 +6,10 @@ on:
       - main  # Replace with your branch name
 
 jobs:
-  hello-world:
+  example-job:
     runs-on: self-hosted
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Run Bash script
-        shell: bash
+      - name: Run Bash Command
         run: |
-          /c/msys64/usr/bin/bash.exe -c 'echo "Hello, World!"'
+          '/c/msys64/usr/bin/bash.exe' -c 'echo "Hello, World!"'
+
