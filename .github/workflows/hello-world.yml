@@ -12,4 +12,4 @@ jobs:
       - name: Run Bash Command
         shell: bash
         run: |
-          /c/msys64/usr/bin/bash.exe -c 'echo "Hello, World!"'
+          '/c/msys64/usr/bin/bash.exe' -c 'echo "Hello, World!"'
