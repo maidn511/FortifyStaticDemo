@@ -1,0 +1,19 @@
+name: Bash Hello World
+
+on:
+  push:
+    branches:
+      - main  # Replace with your branch name
+
+jobs:
+  hello-world:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run Bash script
+        shell: bash
+        run: |
+          /c/msys64/usr/bin/bash.exe -c 'echo "Hello, World!"'
