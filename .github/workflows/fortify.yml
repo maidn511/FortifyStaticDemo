@@ -17,7 +17,7 @@ jobs:
     - name: Check out source code
       uses: actions/checkout@v4  
     - name: Run ScanCentral SAST Scan
-      uses: fortify/github-action@v1.1.2
+      uses: fortify/github-action@main
       env:
         SSC_URL: ${{secrets.SSC_URL}}
         SSC_TOKEN: ${{secrets.SSC_TOKEN}}
