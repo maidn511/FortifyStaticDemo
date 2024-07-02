@@ -18,12 +18,14 @@ jobs:
       uses: actions/checkout@v4  
     - name: Run ScanCentral SAST Scan
       uses: fortify/github-action@main
+      with:
+       sast-scan: true
       env:
         SSC_URL: ${{secrets.SSC_URL}}
         SSC_TOKEN: ${{secrets.SSC_TOKEN}}
         SC_SAST_TOKEN: ${{secrets.CLIENT_AUTH_TOKEN}}
         # EXTRA_SC_SAST_LOGIN_OPTS: --socket-timeout=60s
-        # SSC_APPVERSION: MyApp:MyVersion
+        SSC_APPVERSION: GitHub SAST Testing:V1
         # EXTRA_PACKAGE_OPTS: -bf custom-pom.xml
         SC_SAST_SENSOR_VERSION: 23.2
         # DO_WAIT: true
